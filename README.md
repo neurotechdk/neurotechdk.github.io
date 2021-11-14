@@ -1,2 +1,2 @@
-# neurotechdk.github.io
+# neurotechdk
 Public website repository
