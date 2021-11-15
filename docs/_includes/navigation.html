@@ -1,10 +1,10 @@
 ---
 navigation:
 - text: Home
-  url: /
+  path: /
 - text: Travel
   title: Letters home from abroad
-  url: /about
+  path: /about
 ---
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -14,9 +14,9 @@ navigation:
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {% for link in page.navigation %}
+        {% for nav_item in page.navigation %}
         <li class="nav-item">
-          <a class="nav-link{% if page.url == link.url %} active" aria-current="page{% endif %}" href="{{link.url}}">{{ link.title }}</a>
+          <a class="nav-link{% if page.url == nav_item.path %} active" aria-current="page{% endif %}" href="{{ nav_item.path }}">{{ nav_item.text }}</a>
         </li>
         {% endfor %}
       </ul>
