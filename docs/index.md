@@ -3,7 +3,7 @@ title: Home
 layout: home
 lastmod: '2021-11-15T17:22:56.577Z'
 permalink: /
-carousel_imgaes:
+carousel_images:
   - path: /assets/img/carousel/cubes.jpg
     title: "Cubes are cool"
     subtitle: "...and so are you!"
