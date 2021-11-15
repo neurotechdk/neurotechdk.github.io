@@ -1,4 +1,4 @@
-{ "pages": [
+{ "navigation": [
     {
       "title": "Home",
       "path": "/"

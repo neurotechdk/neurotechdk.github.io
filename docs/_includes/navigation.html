@@ -1,14 +1,8 @@
 <ul class="nav">
-  {% for section in site.data.sections %}
+  {% for section in site.data.sections.navigation %}
   <li class="nav-item">
     <a class="nav-link{% if section.path == page_url %} active{% endif %}" href="{{ section.path }}">{{ section.title }}</a>
   </li>
   {% endfor %}
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
 </ul>
 
