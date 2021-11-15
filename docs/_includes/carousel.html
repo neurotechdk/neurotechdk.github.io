@@ -10,18 +10,21 @@
     <div class="carousel-item{% if forloop.first %} active{% endif %}">
       <img src="{{ carousel_img.path }}" class="d-block w-100" alt="{{ carousel_img.title }}">
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-        <div class="text-white text-center">
-          <h2>NTX DK</h2>
-          <a class="btn btn-outline-light btn-lg m-2"
-                    href="#" role="button">Wow!</a>
+      <div class="d-flex justify-content-center align-items-center h-100">
+        
+          <div class="text-white text-center">
+            <h2>NTX DK</h2>
+            <a class="btn btn-outline-light btn-lg m-2"
+                      href="#" role="button">Wow!</a>
+          </div>
         </div>
-      </div>
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
         <div class="carousel-caption d-none d-md-block">
           <h5>{{ carousel_img.title }}</h5>
           <p>{{ carousel_img.subtitle }}</p>
         </div>
       </div>
+        
+
     </div>
   {% endfor %}
   </div>
