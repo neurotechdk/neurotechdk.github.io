@@ -1,28 +1,22 @@
+---
+navigation:
+- text: Home
+  url: /
+- text: Travel
+  title: Letters home from abroad
+  url: /about
+---
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <li class="nav-item">
-    <a class="nav-link" href="{{ section.path }}">{{ section.title }}</a>
-  </li>
-
-  </div>
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {% for section in site.data.sections.navigation %}
+        {% for link in page.navigation %}
         <li class="nav-item">
-          <a class="nav-link{% if section.path == page_url %} active" aria-current="page{% endif %}" href="#">Home</a>
+          <a class="nav-link{% if page.url == link.url %} active" aria-current="page{% endif %}" href="{{link.url}}">{{ link.title }}</a>
         </li>
         {% endfor %}
       </ul>

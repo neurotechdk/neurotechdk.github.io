@@ -1,3 +1,8 @@
 timezone: Europe/Copenhagen
 encoding: utf-8
 baseurl: https://neurotechdk.github.io/
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
