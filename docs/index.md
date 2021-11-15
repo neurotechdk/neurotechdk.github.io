@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: home
 lastmod: '2021-11-15T17:22:56.577Z'
 permalink: /
 carousel_imgaes:
