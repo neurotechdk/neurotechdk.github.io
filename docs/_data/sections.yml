@@ -3,3 +3,5 @@ navigation:
     path: /
   - text: About
     path: /about
+  - text: Resources
+    path: /resources
