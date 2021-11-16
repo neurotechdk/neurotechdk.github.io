@@ -1,8 +1,10 @@
 timezone: Europe/Copenhagen
 encoding: utf-8
 baseurl: https://neurotechdk.github.io/
-defaults:
-  - scope:
-      path: "assets/img/carousel"
-    values:
-      carousel: true
+collections:
+  resources:
+    output: true
+    permalink: /:collection/:path/
+    sort:
+      date: DESC
+    relative_directory: resources
