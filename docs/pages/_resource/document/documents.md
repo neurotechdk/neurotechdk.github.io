@@ -1,7 +1,5 @@
 ---
-title: Documents
-layout: default
-permalink: /resource/documents
+title: NTXDK Related
 ---
 
 

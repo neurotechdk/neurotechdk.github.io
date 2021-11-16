@@ -10,5 +10,10 @@ defaults:
     path: ""
     type: resource
   values:
-    resource_type: "document"
+    resource_type: "general"
     layout: default
+- scope:
+    path: "pages/_resource/document/"
+    type: resource
+  values:
+    resource_type: "document"
