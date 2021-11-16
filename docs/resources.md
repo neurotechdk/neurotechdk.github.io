@@ -5,7 +5,7 @@ permalink: /resources
 ---
 
 
-{% assign r_grouped = site.posts | group_by: 'author' %}
+{% assign r_grouped = site.resource | group_by: 'resource_type' %}
 {% for group in r_grouped %}
   <h5>{{group.name}}</h5>  
   <ul>
