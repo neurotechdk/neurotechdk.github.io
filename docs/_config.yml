@@ -1,9 +1,9 @@
 timezone: Europe/Copenhagen
 encoding: utf-8
 baseurl: https://neurotechdk.github.io/
-collections_dir: content
+collections_dir: pages
 collections:
-  tutorials:
+  resource:
         output: true
 defaults:
 - scope:
