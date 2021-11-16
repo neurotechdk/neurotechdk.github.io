@@ -7,5 +7,7 @@ defaults:
 - scope:
     path: ""
     type: resources
+    output: true
   values:
     resource_type: "document"
+    layout: default
