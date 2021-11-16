@@ -1,7 +1,7 @@
 ---
 title: Documents
 layout: default
-permalink: /resources/documents
+permalink: /resource/documents
 ---
 
 
