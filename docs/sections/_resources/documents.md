@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Documents
 layout: default
 permalink: /resources/documents
 ---
