@@ -2,11 +2,11 @@ timezone: Europe/Copenhagen
 encoding: utf-8
 baseurl: https://neurotechdk.github.io/
 collections_dir: sections
-collections: ["resources"]
+collections: ["resource"]
 defaults:
 - scope:
     path: ""
-    type: resources
+    type: resource
     output: true
   values:
     resource_type: "document"
