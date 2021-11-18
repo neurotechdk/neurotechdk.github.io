@@ -13,6 +13,15 @@
         </li>
         {% endfor %}
       </ul>
+      {% if site.data.sections.nav_feature %}
+      <ul class="navbar-nav">
+        {% for nav_item in site.data.sections.nav_feature %}
+        <li class="nav-item">
+          <a class="nav-link featured{% if page.url == nav_item.path %} active" aria-current="page{% endif %}" href="{{ nav_item.path }}">{{ nav_item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
       <!--
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

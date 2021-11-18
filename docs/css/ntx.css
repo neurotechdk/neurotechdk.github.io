@@ -12,3 +12,8 @@
     margin-top: -58.59px;
   }
 }
+
+.nav-item a.featured {
+  color: rgb(243, 0, 231) !important;
+  font-weight: bold !important;
+}

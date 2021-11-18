@@ -1,9 +1,9 @@
 <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-bs-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
-    <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-    <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+    {% for carousel_img in page.carousel_images %}
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+    {% endfor %}
   </ol>
   <div class="carousel-inner">
   {% for carousel_img in page.carousel_images %}
@@ -11,15 +11,17 @@
       <img src="{{ carousel_img.path }}" class="d-block w-100" alt="{{ carousel_img.title }}">
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
       <div class="d-flex justify-content-center align-items-center h-100">
-        
+        {% if carousel_img.title %}
           <div class="text-white text-center">
-            <h2>NTX DK</h2>
-            <a class="btn btn-outline-light btn-lg m-2"
-                      href="#" role="button">Wow!</a>
+            <h2>{{ carousel_img.title }}</h2>
+            {% if carousel_img.cta %}
+              <a href="{{ carousel_img.link }}" class="btn btn-outline-white btn-lg">{{ carousel_img.cta }}</a>
+            {% endif %}
           </div>
+        {% endif %}
         </div>
         <div class="carousel-caption d-none d-md-block">
-          <h5>{{ carousel_img.title }}</h5>
+          <h5>{{ carousel_img.caption }}</h5>
           <p>{{ carousel_img.subtitle }}</p>
         </div>
       </div>
