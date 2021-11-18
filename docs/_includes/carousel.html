@@ -13,7 +13,7 @@
       <div class="d-flex justify-content-center align-items-center h-100">
         {% if carousel_img.title %}
           <div class="text-white text-center">
-            <h2>{{ carousel_img.title }}</h2>
+            <h2><a href="{{ carousel_img.link }}">{{ carousel_img.title }}</a></h2>
             {% if carousel_img.cta %}
               <a href="{{ carousel_img.link }}" class="btn btn-outline-white btn-lg">{{ carousel_img.cta }}</a>
             {% endif %}
@@ -21,7 +21,7 @@
         {% endif %}
         </div>
         <div class="carousel-caption d-none d-md-block">
-          <h5>{{ carousel_img.caption }}</h5>
+          <h5><a href="{{ carousel_img.link }}">{{ carousel_img.caption }}</a></h5>
           <p>{{ carousel_img.subtitle }}</p>
         </div>
       </div>
