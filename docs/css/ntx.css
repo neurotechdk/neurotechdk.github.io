@@ -17,3 +17,8 @@
   color: rgb(243, 0, 231) !important;
   font-weight: bold !important;
 }
+
+img[src~="fullwidth"] {
+  width: 100%!important;
+  display: block!important;
+}
