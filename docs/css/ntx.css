@@ -3,7 +3,7 @@
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
-  height: 100vh;
+  max-height: 1005px;
 }
 
 /* Height for devices larger than 576px */
@@ -19,6 +19,11 @@
 }
 
 img[src~="fullwidth"] {
-  width: 100%!important;
-  display: block!important;
+  max-width: 100% !important;
+  display: block !important;
+  clear: both;
+  margin-top:20px;
+}
+.link-light {
+  color: #fbfbfb !important;
 }

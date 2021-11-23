@@ -1,0 +1,17 @@
+<div class="container float-sm-end col-md-6 col-lg-4">
+  <div class="card">
+    <iframe src="{{ include.callout_map_url }}" style="max-height: 200px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="card-body">
+      <h5 class="card-title">{{ include.callout_title }}</h5>
+      <p class="card-text">{{ include.callout_text }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-light">{{ include.event_date }}</li>
+      <li class="list-group-item text-light">{{ include.event_start }} - {{ include.event_end }}</li>
+      <li class="list-group-item text-light">{{ include.location_text }}</li>
+    </ul>
+    <div class="card-footer">
+      <a href="{{ include.callout_link_url }}" class="btn btn-primary">{{ include.callout_link }}</a>
+    </div>
+  </div>
+</div>
