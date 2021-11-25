@@ -104,7 +104,7 @@
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">NeruotechX Denmark</a>
+    <a class="text-reset fw-bold" href="{{ site.url }}">NeruotechX Denmark</a>
   </div>
   <!-- Copyright -->
 </footer>
@@ -113,8 +113,27 @@
 <!-- MDB -->
 <script
   type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"
 ></script>
+<script type="text/javascript">
+  
+  var menuToggle = function() {
+    var elements = document.getElementsByClassName("animated-icon");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].classList.toggle('open');
+    }
 
+  };
+  var loader = setInterval(function () {
+    if(document.readyState !== "complete") return;
+    clearInterval(loader);
+    var elements = document.getElementsByClassName("hamburger-button");
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('click', menuToggle, false);
+    }
+  }, 300);
+
+
+</script>
 </body>
 </html>
