@@ -19,7 +19,8 @@
 }
 
 img[src*="display=fullwidth"] {
-  max-width: 100% !important;
+  max-width: 764px !important;
+  width: 100%;
   display: block !important;
   clear: both;
   margin-top:20px;
