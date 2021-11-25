@@ -3,7 +3,7 @@ title: Home
 layout: home
 permalink: /
 carousel_images:
-  - path: /assets/img/carousel/brainjamposter_carousel.jpg
+  - path: /assets/img/carousel/brainjammposter_carousel.jpg
     title: "NTX DK BrainJamm"
     caption: "So many reasons to come along"
     subtitle: "1 - 2 December 2021"
