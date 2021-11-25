@@ -4,11 +4,11 @@ layout: home
 permalink: /
 carousel_images:
   - path: /assets/img/carousel/brainjamposter_carousel.jpg
-    title: "NTX DK BrainJam"
+    title: "NTX DK BrainJamm"
     caption: "So many reasons to come along"
     subtitle: "1 - 2 December 2021"
     cta: "Join"
-    link: "/brainjam-december-2021"
+    link: "/brainjamm-december-2021"
 
   - path: /assets/img/carousel/cubes.jpg
     caption: "Cubes are cool"
