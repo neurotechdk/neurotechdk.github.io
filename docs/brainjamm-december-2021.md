@@ -19,4 +19,4 @@ Just some of the reasons you'll want to attend:
 
 Stay tuned, there's more info to come...
 
-![BrainJamm December 2021 poster](/assets/img/posters/brainjammposter.jpg#fullwidth)
+![BrainJamm December 2021 poster](/assets/img/posters/brainjammposter.jpg?display=fullwidth)
