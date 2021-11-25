@@ -28,3 +28,29 @@ img[src*="display=fullwidth"] {
 .link-light {
   color: #fbfbfb !important;
 }
+
+body {
+  /* The image used */
+  background-image: url('/assets/img/layout/bg.png');
+
+  /* Set a specific height */
+  /* height: auto !important; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-dark {
+  background-color: #101010!important;
+}
+.main-content {
+  background-color: #303030;
+}
+
+#intro {
+  z-index:1;
+
+}

@@ -1,27 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <strong>NTX DK</strong></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        {% for nav_item in site.data.sections.navigation %}
-        <li class="nav-item">
-          <a class="nav-link{% if page.url == nav_item.path %} active" aria-current="page{% endif %}" href="{{ nav_item.path }}">{{ nav_item.text }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      {% if site.data.sections.nav_feature %}
-      <ul class="navbar-nav">
-        {% for nav_item in site.data.sections.nav_feature %}
-        <li class="nav-item">
-          <a class="nav-link featured{% if page.url == nav_item.path %} active" aria-current="page{% endif %}" href="{{ nav_item.path }}">{{ nav_item.text }}</a>
+<header>
+  <nav class="fixed-top navbar navbar-expand navbar-dark d-block d-lg-block bg-black shadow-3-strong" style="z-index: 2000;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <strong>NTX DK</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          {% for nav_item in site.data.sections.navigation %}
+          <li class="nav-item">
+            <a class="nav-link{% if page.url == nav_item.path %} active" aria-current="page{% endif %}" href="{{ nav_item.path }}">{{ nav_item.text }}</a>
           </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
+          {% endfor %}
+        </ul>
+        {% if site.data.sections.nav_feature %}
+        <ul class="navbar-nav d-none d-lg-block">
+          {% for nav_item in site.data.sections.nav_feature %}
+          <li class="nav-item">
+            <a class="nav-link featured{% if page.url == nav_item.path %} active" aria-current="page{% endif %}" href="{{ nav_item.path }}">{{ nav_item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
