@@ -9,7 +9,7 @@ url: "https://brainjammers.com/"
 timezone: Europe/Copenhagen
 encoding: utf-8
 social:
-  twitter: https://twitter.com/
+  twitter: https://twitter.com/NeuroTechDK
   facebook: https://www.facebook.com/groups/neurotechdk
   github: https://github.com/neurotechdk
 collections_dir: pages

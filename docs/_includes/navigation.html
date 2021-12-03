@@ -13,9 +13,10 @@
         </li>
         {% endfor %}
       </ul>
-      {% if site.data.sections.nav_feature %}
+      {% assign current_featured_links = site.data.sections.nav_feature | where: 'show_link', true %}
+      {% if current_featured_links %}
       <ul class="navbar-nav">
-        {% for nav_item in site.data.sections.nav_feature %}
+        {% for nav_item in current_featured_links %}
         <li class="nav-item">
           <a class="nav-link featured{% if page.url == nav_item.path %} active" aria-current="page{% endif %}" href="{{ nav_item.path }}">{{ nav_item.text }}</a>
           </li>

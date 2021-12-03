@@ -8,4 +8,5 @@ navigation:
 nav_feature:
   - text: BrainJam
     path: /brainjam-december-2021
-    temporary: true
+    show_link: false
+
