@@ -9,5 +9,5 @@ navigation:
     path: /resources
 nav_feature:
   - text: BrainJamm
-    path: /brainjamm-december-2021
+    path: /event/brainjamm-december-2021
     show_link: false
