@@ -3,6 +3,8 @@ navigation:
     path: /
   - text: About
     path: /about
+  - text: Events
+    path: /events
   - text: Resources
     path: /resources
 nav_feature:

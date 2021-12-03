@@ -20,6 +20,7 @@ defaults:
 - scope:
     path: ""
     type: resource
+    static_file: false
   values:
     resource_type: "general"
     layout: default
@@ -28,4 +29,17 @@ defaults:
     type: resource
   values:
     resource_type: "document"
+- scope:
+    path: "pages/_resource/slide/"
+    type: resource
+  values:
+    resource_type: "slide"
+    static_file: true
+- scope:
+    path: "pages/_event/"
+    type: event
+  values:
+    event_type: "brainjamm"
+    event_start: 2018-01-01 09:00:00
+    event_end: 2018-01-01 10:00:00
 

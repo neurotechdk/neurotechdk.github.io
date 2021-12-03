@@ -12,7 +12,11 @@ permalink: /resources
   {% for r in group.items %}
     <li>
       <a href="{{ r.url }}">
-        {{ r.title }}
+        {% if r.static_file %}
+           {{ r.basename }}
+        {% else %}
+           {{ r.title }}
+        {% endif %}
       </a>
     </li>
   {% endfor %}
