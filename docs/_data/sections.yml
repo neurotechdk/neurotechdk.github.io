@@ -6,7 +6,6 @@ navigation:
   - text: Resources
     path: /resources
 nav_feature:
-  - text: BrainJam
-    path: /brainjam-december-2021
+  - text: BrainJamm
+    path: /brainjamm-december-2021
     show_link: false
-
