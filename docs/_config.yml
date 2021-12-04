@@ -26,6 +26,7 @@ defaults:
     values:
       resource_type: "general"
       layout: default
+      permalink: /:collection/:path
   -
     scope:
       path: "pages/_resource/document"

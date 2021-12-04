@@ -1,0 +1,15 @@
+<h5>Event Slides</h5>
+{% assign colls = site.collections %}
+<ul>
+{% for coll in colls %}
+  {% for file in coll.files %}
+    {% if file.resource_type == "slide" %}
+      <li>
+        <a href="/{{ file.path | replace_first: "_", "" }}">
+            {{ file.basename }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</ul>
