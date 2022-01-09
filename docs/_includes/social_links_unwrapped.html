@@ -1,0 +1,25 @@
+{% if include.person.twitter %}
+  <a href="{{ include.person.twitter }}" target="_blank" rel="noopener noreferrer" class="link-light">
+    <i class="fab fa-twitter"></i>
+  </a>
+{% endif %}
+{% if include.person.linkedin %}
+  <a href="{{ include.person.linkedin }}" target="_blank" rel="noopener noreferrer" class="link-light">
+    <i class="fab fa-linkedin"></i>
+  </a>
+{% endif %}
+{% if include.person.github %}
+  <a href="{{ include.person.github }}" target="_blank" rel="noopener noreferrer" class="link-light">
+    <i class="fab fa-github"></i>
+  </a>
+{% endif %}
+{% if include.person.email %}
+  <a href="mailto:{{ include.person.email }}" class="link-light">
+    <i class="fas fa-envelope"></i>
+  </a>
+{% endif %}
+{% if include.person.facebook %}
+  <a href="{{ include.person.facebook }}" target="_blank" rel="noopener noreferrer" class="link-light">
+    <i class="fab fa-facebook"></i>
+  </a>
+{% endif %}

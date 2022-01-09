@@ -12,6 +12,9 @@ carousel_images:
 
   - path: /assets/img/carousel/cubes.jpg
     caption: "Cubes are cool"
+    title: "About NTX DK"
+    cta: "Meet the team"
+    link: "/about"
     subtitle: "...and so are you!"
   - path: /assets/img/carousel/usebrain.jpg
     caption: "Have you ever felt like you only use 10% of your brain?"
