@@ -1,7 +1,7 @@
 <h5>{{ include.title | capitalize }}</h5>
 <ul>
 {% for e in include.events %}
-  <li>
+  <li date="{{ e.event_start }}">
     <a href="{{ e.url }}">
       [{{ e.event_start | date: "%a, %d %B %Y" }}] {{ e.title }}
     </a> #{{ e.event_type }}
