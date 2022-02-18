@@ -7,7 +7,7 @@
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item text-light">{{ include.event_start | date: "%a, %d %B %Y" }}</li>
-      <li class="list-group-item text-light">{{ include.event_start | date: "%H:%i"}} - {{ include.event_end | date: "%H:%i" }}</li>
+      <li class="list-group-item text-light">{{ include.event_start | date: "%H:%M"}} - {{ include.event_end | date: "%H:%M" }}</li>
       <li class="list-group-item text-light">{{ include.location_text }}</li>
     </ul>
     <div class="card-footer">

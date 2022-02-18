@@ -8,6 +8,6 @@ navigation:
   - text: Resources
     path: /resources
 nav_feature:
-  - text: BrainJamm
-    path: /event/brainjamm-december-2021
-    show_link: false
+  - text: brainjaaaammmm
+    path: /event/brainjaaaammmm-march-2022
+    show_link: true
